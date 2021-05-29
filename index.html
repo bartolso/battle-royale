@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle Royale Simulator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
+</head>
+<body>
+    <div class="container" id='container'>
+        <h1 class='my-2'>Simulador Battle Royale</h1>
+        <div class="form-group">
+            <label for="input-players">Participantes</label>
+            <input type="text" class="form-control" id="input-players" placeholder='Ejemplo: Jim, Dwight, Michael, Pam'>
+        </div>
+        <button type="button" class="btn btn-success my-1" onclick='start();' id='start-btn'>Empezar</button>
+        <button type="button" class="btn btn-primary my-1" onclick='nextDay();' id='next-day-btn'>Avanzar día</button>
+
+        <div class=options>
+            <div class="form-check" id="death-msg-check-div">
+                <input class="form-check-input" type="checkbox" value="" id="death-msg-check">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Mensajes de muerte
+                </label>
+            </div>
+        </div>
+       
+        <div id="player-list">
+
+        </div>
+        <div class="my-1", id='log'>
+        </div>
+    </div>
+    <script src='script.js'></script>
+</body>
+</html>
