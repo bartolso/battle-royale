@@ -1,3 +1,9 @@
+/*
+COSAS A HACER:
+- las armas se usan de forma aleatoria sin repetirse hasta que no haya más 
+
+*/
+
 let day = 0;
 
 let players = []; //lista general de todos los jugadores vivos o muertos
@@ -6,7 +12,7 @@ let deadPlayers = [];
 
 const defaultPlayers = ['Michael', 'Pam', 'Dwight', 'Jim'];
 
-const deathMessages = [
+let deathMessages = [
     "",
     ""
 ];
